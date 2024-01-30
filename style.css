@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(52,147,190);
+    background: linear-gradient(90deg, rgba(52,147,190,1) 0%, rgba(72,98,222,1) 35%, rgba(150,69,187,1) 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    height: 60vh;
+    min-width: 350px;
+    max-width: 350px;
+ 
+}
+
+.display {
+    width: 100%;
+    min-height: 20%;
+    max-height: min-content;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    color: white;
+    text-align: right;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px;
+    font-weight: bold;
+
+}
+
+.previousNumber {
+    font-size: 20px;
+    color: rgb(166, 172, 124);
+}
+
+.currentNumber {
+    font-size: 35px;
+}
+
+.mathSign{
+    font-size: 22px;
+}
+
+.panel {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+}
+
+.panel button {
+    font-size: 25px;
+    background-color: #352f85;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+
+}
+
+button:hover {
+    background-color: #2d296e;
+
+}
+
+.equals {
+    grid-row: -1/-3;
+    grid-column: -1/-2;
+}
+
+.calculation-history {
+    height: 60vh;
+    width: 150px;
+    margin: 20px;
+    background-color: rgb(89, 81, 187);
+    color: #fff;
+    padding: 4px 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.history-title {
+    padding-bottom: 12px;
+}
