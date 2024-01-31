@@ -21,7 +21,7 @@ body {
 }
 
 .calculator {
-    height: 60vh;
+    height: 70vh;
     min-width: 350px;
     max-width: 350px;
  
@@ -88,9 +88,9 @@ button:hover {
 }
 
 .calculation-history {
-    height: 60vh;
+    height: 70vh;
     width: 150px;
-    margin: 20px;
+    margin-left: 20px;
     background-color: rgb(89, 81, 187);
     color: #fff;
     padding: 4px 8px;
@@ -100,4 +100,35 @@ button:hover {
 
 .history-title {
     padding-bottom: 12px;
+}  
+
+.history-btn {
+    background:rgb(57, 57, 58);
+    color: #fff;
+    border: none;
+    padding: 4px;
+    margin-top: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: none;
+    outline: none;
+    font-weight: bold;
+    margin: 4px auto;
+}
+
+.history {
+    padding-top: 6px;
+}
+
+.history-btn.active {
+    display: block;
+    
+}
+
+.history-item {
+    padding: 4px 0px;
+    list-style: none;
+    letter-spacing: 4px;
+    border-bottom: 1px solid rgb(123, 118, 146);
 }
